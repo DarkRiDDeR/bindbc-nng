@@ -1,5 +1,4 @@
 [![Dub](https://img.shields.io/dub/v/bindbc-nng.svg?style=flat)](https://code.dlang.org/packages/bindbc-nng)
-[![Build Status](https://travis-ci.org/DarkRiDDeR/bindbc-nng.svg?branch=master)](https://travis-ci.org/DarkRiDDeR/bindbc-nng)
 [![License](https://img.shields.io/github/license/DarkRiDDeR/bindbc-nng.svg?style=flat)](https://github.com/DarkRiDDeR/bindbc-nng/blob/master/LICENSE)
 
 # bindbc-nng
