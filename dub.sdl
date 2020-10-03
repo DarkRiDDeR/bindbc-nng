@@ -1,0 +1,31 @@
+name "bindbc-nng"
+description "Dynamic and static bindings to nng, compatible with -betterC, @nogc, and nothrow."
+homepage "https://github.com/darkridder/bindbc-nng"
+authors "DarkRiDDeR"
+copyright "Copyright © 2020, DarkRiDDeR (Roman Barinov)"
+license "Boost"
+
+targetType "staticLibrary"
+targetPath "lib"
+targetName "BindBC_NNG"
+
+configuration "dynamic" {
+    dependency "bindbc-loader" version="~>0.3.2"
+}
+
+configuration "dynamicBC" {
+    dependency "bindbc-loader" version="~>0.3.2"
+    subConfiguration "bindbc-loader" "yesBC"
+    dflags "-betterC"
+}
+
+configuration "static" {
+    versions "BindNNG_Static"
+    excludedSourceFiles "source/bindbc/nng/binddynamic.d"
+}
+
+configuration "staticBC" {
+    dflags "-betterC"
+    versions "BindNNG_Static"
+    excludedSourceFiles "source/bindbc/nng/binddynamic.d"
+}
